@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #555;
+}
+
+h1,
+h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.after_float {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header {
+    padding: 0 2vw;
+    line-height: 12vh;
+    height: 12vh;
+    background: #444;
+}
+
+header h1 {
+    display: inline-block;
+}
+header h1 a {
+    color: #fff;
+    font-size: 18px;
+}
+header nav {
+    float: right;
+    height: 8vh;
+    margin: 2vh 1vw;
+    border-radius: 25px;
+}
+header nav a {
+    display: inline-block;
+    line-height: 0;
+    margin: 1vh 0;
+}
+header nav a img {
+    display: inline-block;
+    width: 6vh;
+    height: 6vh;
+}
+
+.container {
+    background: #4c73f1;
+    padding-top: 1vh;
+    height: 87vh;
+}
+.works {
+    margin: 1vh 2vw;
+    height: 80vh;
+    padding-bottom: 2vh;
+}
+.works h2 {
+    padding: 0 2vw;
+    height: 8vh;
+    line-height: 8vh;
+    font-size: 16px;
+    color: #fff;
+}
+.works ul {
+    padding: 0 0 5vh;
+    overflow-y: auto;
+    height: 73vh;
+    background: #fff;
+    box-shadow: 0 0 6px #2c53d1;
+}
+.works ul li a {
+    display: block;
+    border-bottom: 1px dashed #f0f0f0;
+    padding: 16px 1vw 16px 1vw;
+    cursor: pointer;
+}
+.works ul li a:hover {
+    background: #fdfdfd;
+}
+.works ul li span {
+    font-size: 13px;
+}
+.works ul li .dot {
+    float: left;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 8px 0 8px;
+    background: #4c73f1;
+    border-radius: 50%;
+}
+.works ul li a:visited .dot {
+    background: #7ca3ff;
+}
+.works ul li date {
+    float: right;
+    color: #777;
+    font-size: 12px;
+}
+.works ul li img.img_date {
+    float: right;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 3px 8px 0 8px;
+}
