@@ -23,12 +23,6 @@ ul {
     list-style: none;
 }
 
-.after_float {
-    display: block;
-    content: "";
-    clear: both;
-}
-
 header {
     padding: 0 2vw;
     line-height: 12vh;
@@ -85,9 +79,10 @@ header nav a img {
     box-shadow: 0 0 6px #2c53d1;
 }
 .works ul li a {
-    display: block;
+    display: inline-block;
+    width: 96%;
     border-bottom: 1px dashed #f0f0f0;
-    padding: 16px 1vw 16px 1vw;
+    padding: 16px 2% 16px;
     cursor: pointer;
 }
 .works ul li a:hover {
@@ -101,22 +96,30 @@ header nav a img {
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin: 5px 8px 0 8px;
+    margin: 4px 8px 0 8px;
     background: #4c73f1;
     border-radius: 50%;
 }
 .works ul li a:visited .dot {
     background: #7ca3ff;
 }
-.works ul li date {
+.works ul li .det {
     float: right;
+}
+.works ul li date {
     color: #777;
     font-size: 12px;
 }
 .works ul li img.img_date {
-    float: right;
     display: inline-block;
     width: 12px;
     height: 12px;
     margin: 3px 8px 0 8px;
+}
+
+@media screen and (max-width: 720px) {
+    .works ul li .det {
+        clear: both;
+        padding: 6px;
+    }
 }
